@@ -1,0 +1,1 @@
+<img src="/assets/images/[article dir]/[pic name]" style="zoom:40%; margin: 0 auto; display: block;" />
