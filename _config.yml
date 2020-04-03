@@ -267,6 +267,7 @@ compress_html:
 
 
 # Defaults
+future: true
 defaults:
   # _posts
   - scope:
