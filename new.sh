@@ -16,3 +16,6 @@ description:
 <img src='/assets/images/$file_name/[pic name]' style='zoom:40%; margin: 0 auto; display: block;'/>" > "_posts/"$file_name".md"
 
 mkdir "assets/images/$file_name"
+
+mkdir "assets/blogcode/$file_name"
+
