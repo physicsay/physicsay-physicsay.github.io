@@ -4,6 +4,7 @@ url: projectile-motion-1
 date: 2020-04-03 20:09:15
 tags:
 - 平抛运动
+- 可视化
 categories: mechanics
 description: 高中可能会涉及一些斜抛运动，但数学计算略显复杂，这里借助工具直观绘制斜抛运动的轨迹。
 ---
