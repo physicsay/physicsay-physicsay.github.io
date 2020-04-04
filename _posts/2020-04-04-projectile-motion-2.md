@@ -4,6 +4,7 @@ url: projectile-motion-2
 date: 2020-04-04 10:03:23
 tags:
 - 平抛运动
+- 可视化
 categories: mechanics
 description: 斜抛运动解方程有点复杂，有没有更好的方法呢？
 ---
