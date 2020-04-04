@@ -17,5 +17,6 @@ description:
 
 mkdir "assets/images/$file_name"
 
-mkdir "assets/blogcode/$file_name"
+# create same file for saving program code
+mkdir "../Code_JekyllBlog/$file_name"
 
