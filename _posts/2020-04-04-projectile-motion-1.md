@@ -70,6 +70,9 @@ $$
 
 <img src='/assets/images/2020-04-04-projectile-motion-1/motion.gif' style='zoom:60%; margin: 0 auto; display: block;'/>
 
+(此处有图，加载较慢，请耐心等待)
+
+
 ### 1.3 误差分析
 
 学习物理，当然也需要考虑下误差，以实际数据思考下以下情况：假设 A 同学掷铅球，铅球离手高度分别为：1.7m，初速为 6m/s， 不计阻力，请问铅球的最远离地距离 (取 $g = 9.8m/s^2$ )？
