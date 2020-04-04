@@ -32,7 +32,7 @@ $$
 
 铅球落地的水平距离 $x = \frac{2S_\Delta}{g}$，当速度三角形面积最大时，铅球水平距离最远。
 
-将速度三角形面积换一个公式求解 $S_Delta = \frac{1}{2}v_0v_fsin(\theta + \alpha)$，当 $(\theta + \alpha) = \frac{\pi}{2}$ 时，速度三角形面积最大 $S_{max} = \frac{1}{2}v_0v_f$，代入水平距离公式，可以计算出铅球落地水平距离最远为：$x_{max} = \frac{v_0\sqrt{v_0^2+2gH}}{g}$。
+将速度三角形面积换一个公式求解 $S_\Delta = \frac{1}{2}v_0v_fsin(\theta + \alpha)$，当 $(\theta + \alpha) = \frac{\pi}{2}$ 时，速度三角形面积最大 $S_{max} = \frac{1}{2}v_0v_f$，代入水平距离公式，可以计算出铅球落地水平距离最远为：$x_{max} = \frac{v_0\sqrt{v_0^2+2gH}}{g}$。
 
 计算下此时的抛出角度：
 
