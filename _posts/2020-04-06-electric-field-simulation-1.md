@@ -55,7 +55,7 @@ description: 很难把握住电场和电势的概念？把电场和电势画出�
 <img src='/assets/images/20200406-electric-field-simulation-1/dynamic-pospos.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
 
 正负电荷的三维电场线
-<img src='/assets/images/20200406-electric-field-simulation-1/dynamic-pospos.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
+<img src='/assets/images/20200406-electric-field-simulation-1/dynamic-posneg.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
 
 (由于 gif 图加载较慢，请耐心等待)
 
