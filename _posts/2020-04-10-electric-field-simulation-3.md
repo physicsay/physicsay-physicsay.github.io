@@ -1,5 +1,5 @@
 ---
-title: 两个正点电荷中垂线的运动
+title: 试探电荷两个正电荷中垂线上的运动
 url: electric-field-simulation-3
 date: 2020-04-10 21:23:02
 tags:
