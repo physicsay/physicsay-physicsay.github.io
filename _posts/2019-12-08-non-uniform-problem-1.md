@@ -4,6 +4,7 @@ url: non-uniform-problem-2
 date: 2019-02-14 15:10:56
 tags:
 - 变速运动
+- 数值方法
 categories: mechanics
 description: 遇到加速度变化的问题，要怎么处理？不会用微元法，怎么办？
 ---
