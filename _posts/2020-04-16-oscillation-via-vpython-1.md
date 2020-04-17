@@ -1,6 +1,6 @@
 ---
 title: 用 Vpython 模拟弹簧振子的简谐振动 (一)
-url: oscillation-via-vpython
+url: oscillation-via-vpython-1
 date: 2020-04-16 15:47:14
 tags:
 - 可视化

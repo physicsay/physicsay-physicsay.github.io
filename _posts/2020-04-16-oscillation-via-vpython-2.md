@@ -1,6 +1,6 @@
 ---
 title: 用 Vpython 模拟弹簧振子的简谐振动 (二)
-url: oscillation-via-vpython
+url: oscillation-via-vpython-2
 date: 2020-04-16 15:47:14
 tags:
 - 可视化
@@ -10,64 +10,78 @@ categories: mechanics
 description: 在弹簧振子的运动中，如何才能改变其运动的振幅和周期？
 ---
 
-## 1. 简谐振动概念
+## 1. 简谐运动位置、速度、加速度关系
 
-简谐振动是最简单最基本的振动。首先明确几个概念：
-1. 质点在某位置所受的力（或沿运动方向受的力）等于零，则此位置称为平衡位置。
-2. 若作用于致电的力总与质点相对于平衡位置的位移成正比，且只系i昂平衡位置，则此作用力称线性回复力。
+上文给出了弹簧振子的运动图。
 
-> 质点在线性回复力作用下围绕平衡位置的运动叫做简谐振动。
-
-弹簧振子和小角度的单摆运动，都是简谐运动。
-
-本文用 Vpython 模拟理想弹簧振子模型（即不考虑阻力、弹簧质量等因素），如图所示，小球受到的弹力是始终指向平衡位置，并且大小与弹簧的伸长量成正比，小球所做的运动是简谐运动。
-
-<img src='/assets/images/2020-04-16-oscillation-via-vpython-1/fig.png' style='zoom:40%; margin: 0 auto; display: block;'/>
-
-根据牛顿第二定律，写出滑块的运动方程。
-
-$$
-m \frac{d^2x}{dt^2} = -kx
-$$
-
-可以求解出该方程的解为：$x = Asin(\omega t + \phi)$
-
-值得注意的是，弹簧振子的周期 $T$ 和 滑块质量 $m$ 及 弹簧的劲度系数 $k$ 有关，具体为：
-
-$$
-\omega^2 = \frac{k}{m}
-$$ 
-
-
-## 2. Vpython 模拟
-
-Vpython 是一个基于 Python 开发的可视化软件库，可以方便模拟多种物理过程。本文使用了 Vpython 库进行模拟弹簧斜振子的运动。
-
-### 2.1 前置工作
-
-在计算机模拟中，物体下一时刻的状态是通过上一时刻的状态确定的。因此，有以下的“微元”过程：
-
-$$
-a(t + dt) = -\frac{k}{m} \cdot x(t) \\
-v(t + dt) = v(t) + a(t) \cdot dt   \\
-x(t + dt) = x(t) + v(t) \cdot dt  \\
-$$  
-
-下一时刻 $t + dt$ 的加速度是通过当前位置 $x(t)$ 确定的，而确定了加速度，就可以计算出下一时刻的速度和位移。
-
-### 2.2 结果
-
-下面给出了弹簧振子的运动图。
-
-<img src='/assets/images/2020-04-16-oscillation-via-vpython-1/motion.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
+<img src='/assets/images/2020-04-16-oscillation-via-vpython-2/motion.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
 
 (此处有图，加载较慢，请耐心等待)
 
-### 2.3 代码
+我们来看下弹簧振子的 $x-t$，$v-t$，$a-t$ 关系图。
 
-下面是弹簧振子模拟的主要代码。
+<img src='/assets/images/2020-04-16-oscillation-via-vpython-2/xva.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
-> 要运行该代码，需要安装 Python 和 vpython 的库。
+首先分析 $x-t$ 图，在平衡位置附近，轨迹最稀疏（BD 位置）；在最大位移处，轨迹点最为密集（AC 处）。再分析 $v-t$，$a-t$ 图：在平衡位置处，小球运动的速度最大，加速度为 0 ；在最大位移处，小球运动的速度为 0， 加速度最大。
+
+## 2. 如何改变振幅和周期
+
+### 2.1 改变滑块释放的初始位置
+
+在程序中，我们改变滑块的初始位置不同，保持其他条件相同。
+
+> 假设弹簧的劲度系数为 1， 滑块质量为 1， 平衡位置在 $x = 9$， 滑块初始位置为 $x = 12$ 和 $x = 15$。
+
+<img src='/assets/images/2020-04-16-oscillation-via-vpython-2/amp.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
+
+画出滑块位置随着时间的变化曲线：
+
+<img src='/assets/images/2020-04-16-oscillation-via-vpython-2/amp_t.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+
+滑块初始位置 $x = 12$ 对应上图 $x_1-t$。
+
+在最远距离处静止释放滑块，要增加弹簧振子的振幅，只需要使 距平衡位置的距离变大。
+
+### 2.2 改变弹簧的劲度系数
+
+令一根弹簧的劲度系数为 1， 另一根的劲度系数为 2，滑块平衡位置在 $x = 9$， 滑块初始位置为 $x = 12$， 来考察弹簧振子的运动。
+
+<img src='/assets/images/2020-04-16-oscillation-via-vpython-2/spring.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
+
+画出滑块位置随着时间的变化曲线：
+
+<img src='/assets/images/2020-04-16-oscillation-via-vpython-2/spring_t.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+
+劲度系数为 1 的滑块运动对应上图 $x_1-t$。
+
+可以看出，提高弹簧的劲度系数，周期会变短。
+
+
+### 2.3 改变弹簧的劲度系数
+
+令第一个滑块的质量为 1， 第二个滑块质量为 2，滑块平衡位置在 $x = 9$， 滑块初始位置为 $x = 12$， 来考察弹簧振子的运动。
+
+<img src='/assets/images/2020-04-16-oscillation-via-vpython-2/mass.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
+
+画出滑块位置随着时间的变化曲线：
+
+<img src='/assets/images/2020-04-16-oscillation-via-vpython-2/mass_t.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+
+质量为 1 的滑块运动对应上图 $x_1-t$。
+
+可以看出，增加滑块质量，周期会变长。
+
+### 2.4 总结
+
+从以上模拟中可以发现：提高弹窗的劲度系数，减小滑块质量，弹簧振子的周期均会变短。
+
+通过求解弹簧振子的周期，有如下公式：
+
+$$
+T = 2\pi\sqrt{\frac{m}{k}}
+$$
+
+## 3. 代码
 
 ```python
 # -*- coding: utf-8 -*-
@@ -75,32 +89,58 @@ $$
 # @Wechat: 物理说 (Physicsay)
 
 from vpython import *
+## background 
+canvas(width= 800, height = 600, center = vector(0,0,0), background = color.white)
+mass_obj1 = box(pos = vector(12,0,0), velocity = vector(0,0,0), size = vector(1,1,1), color = color.blue, mass = 1)
+mass_obj2 = box(pos = vector(15,-2,0), velocity = vector(0,0,0), size = vector(1,1,1), color = color.black, mass = 1)
 
-mass_obj = box(pos = vector(12,0,0), velocity = vector(0,0,0), size = vector(1,1,1), color = color.blue, mass = 1)
-pivot = vector(0, 0, 0)
-spring = helix(pos = pivot, axis = mass_obj.pos - pivot, radius=0.4, constant = 1, thickness = 0.1, coils = 15, color =  color.red)
-floor = box(pos=vector(7.5,-0.5,0), size=vector(15, 0.1, 4), color = color.green)
-wall = box(pos=vector(0,0.5,0), size=vector(0.1, 2, 4), color = color.green)
+pivot1 = vector(0, 0, 0)
+pivot2 = vector(0, -2, 0)
+spring1 = helix(pos = pivot1, axis = mass_obj1.pos - pivot1, radius=0.4, constant = 1, thickness = 0.1, coils = 15, color =  color.red)
+spring2 = helix(pos = pivot2, axis = mass_obj2.pos - pivot2, radius=0.4, constant = 1, thickness = 0.1, coils = 15, color =  color.red)
 
-eq_pos = vector(9,0,0)
+eq_pos1 = vector(9,0,0)
+eq_pos2 = vector(9,-2,0)
+
+floor1 = box(pos=vector(7.5,-0.5,0), size=vector(15, 0.1, 4), color = color.green)
+wall1 = box(pos=vector(0,0.5,0), size=vector(0.1, 2, 4), color = color.green)
+
+floor2 = box(pos=vector(7.5,-2.5,0), size=vector(15, 0.1, 4), color = color.green)
+wall2 = box(pos=vector(0,-1.5,0), size=vector(0.1, 2, 4), color = color.green)
+
+eq = arrow(pos = vector(eq_pos1.x, 2, 0), axis=vector(0, -1, 0), shaftwidth=0.1, color = color.black)
+label( pos=vector(eq_pos1.x, 3, 0), text='平衡位置' )
+
+my_graph = graph(title = "振幅", xtitle = "t", ytitle = "x")
+
+my_curve1 = gdots(graph = my_graph, color = color.blue, label = 'x1-t')
+my_curve2 = gdots(graph = my_graph, color = color.red, label = 'x2-t')
 
 t = 0
-dt = 0.01
+dt = 0.1
 
 while (t < 50):
 	rate(100)
-	acc = (eq_pos - mass_obj.pos)* spring.constant / mass_obj.mass
-	mass_obj.velocity = mass_obj.velocity + acc * dt
-	mass_obj.pos = mass_obj.pos + mass_obj.velocity * dt
-	spring.axis = mass_obj.pos - spring.pos
+	acc1 = (eq_pos1 - mass_obj1.pos)* spring1.constant / mass_obj1.mass
+	mass_obj1.velocity = mass_obj1.velocity + acc1 * dt
+	mass_obj1.pos = mass_obj1.pos + mass_obj1.velocity * dt
+	spring1.axis = mass_obj1.pos - spring1.pos
+
+	acc2 = (eq_pos2 - mass_obj2.pos)* spring2.constant / mass_obj2.mass
+	mass_obj2.velocity = mass_obj2.velocity + acc2 * dt
+	mass_obj2.pos = mass_obj2.pos + mass_obj2.velocity * dt
+	spring2.axis = mass_obj2.pos - spring2.pos
+
 	t = t + dt
+	my_curve1.plot(pos = (t, mass_obj1.pos.x - eq_pos1.x))
+	my_curve2.plot(pos = (t, mass_obj2.pos.x - eq_pos2.x))
 ```
 
+> 注：代码给出了两个弹簧振子的不同初始位置的运动，文中提及的改变滑块质量和弹簧劲度系数的代码，只需在这基础上稍作修改即可，再次不再赘述。
+
+
 ## 思考：
-1. 在这个模型中，改变什么因此，才能改变弹簧振子的振幅和周期？
-2. 整个系统动能和势能之前是如何转换的？
-3. 如果平面有摩擦，滑块的运动是怎样的？
-
-
+1. 整个系统动能和势能之前是如何转换的？
+2. 如果平面有摩擦，滑块的运动是怎样的？
 
 
