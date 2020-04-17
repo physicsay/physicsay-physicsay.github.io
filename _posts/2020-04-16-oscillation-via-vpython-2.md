@@ -89,8 +89,7 @@ $$
 # @Wechat: 物理说 (Physicsay)
 
 from vpython import *
-## background 
-canvas(width= 800, height = 600, center = vector(0,0,0), background = color.white)
+
 mass_obj1 = box(pos = vector(12,0,0), velocity = vector(0,0,0), size = vector(1,1,1), color = color.blue, mass = 1)
 mass_obj2 = box(pos = vector(15,-2,0), velocity = vector(0,0,0), size = vector(1,1,1), color = color.black, mass = 1)
 
@@ -141,7 +140,7 @@ while (t < 50):
 
 
 ## 思考：
-1. 整个系统动能和势能之前是如何转换的？
-2. 如果平面有摩擦，滑块的运动是怎样的？
+1. 整个系统动能和势能之前是如何转换的？  
+2. 如果平面有摩擦，滑块的运动是怎样的？  
 
 
