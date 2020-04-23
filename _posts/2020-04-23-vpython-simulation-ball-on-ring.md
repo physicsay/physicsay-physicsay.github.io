@@ -7,7 +7,7 @@ tags:
 - 可视化
 - 物理题
 categories: comprehension 
-description: 用 VPython 模拟小球在圆环上的运动。
+description: 带电小球在重力、支持力和电场力的作用下，在圆环上速率是如何变化的呢？
 ---
 
 来看一下无锡市 2019 届高三第一学期期末考试的题：
@@ -19,7 +19,7 @@ description: 用 VPython 模拟小球在圆环上的运动。
 **C**. 小球 A 运动到圆环最低点 Q 的过程中，速率不断变大  
 **D**. 小球到达圆环最低点 Q 时的速度大小为 $\sqrt{2gR}$   
 
-<img src='/assets/images/2020-04-23-vpython-simulation-ball-on-ring/fig.png' style='zoom:100%; margin: 0 auto; display: block;'/>
+<img src='/assets/images/2020-04-23-vpython-simulation-ball-on-ring/fig.png' style='zoom:150%; margin: 0 auto; display: block;'/>
 
 ---
 
@@ -51,20 +51,20 @@ A 从释放运动至圆环最低点 Q 的过程中，A、B 之间的距离发生
 
 (此处有动图，加载较慢，请耐心等待)
 
-并且模拟角度与速率的变换关系：
+并且模拟角度与速率的关系：
 
 <img src='/assets/images/2020-04-23-vpython-simulation-ball-on-ring/oscillation.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
 
 (此处有动图，加载较慢，请耐心等待)
 
-从这里也可以看出，小球最终会回到 A 点。
-> 注： 上图给出的是小球沿着圆环的速率，逆时针为角度正方向。
+从这里也可以看出，小球最终会回到 A 点，能量守恒。
+> 注： 上图给出的是小球沿着圆环的速率，角度的逆时针方向为正方向。
 
-考察小球 A 运动到最低点 Q 的运动过程，如下所示：
+考察小球从 A 到最低点 Q 过程中速率的变化，如下所示：
 
 <img src='/assets/images/2020-04-23-vpython-simulation-ball-on-ring/v_angle.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
-从上图中可以直观看出：从 A 点运动到 Q 点的过程中，速率先增大后减小。
+从上图中可以直观看出：从 A 点运动到 Q 点的过程中，即角度从 180$^\circ$ 到 270$^\circ$，速率先增大后减小，到达 Q 点的速率为 $\sqrt{2gR} = 4.47 m/s$。
 
----
+
 
