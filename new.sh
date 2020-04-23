@@ -20,3 +20,5 @@ mkdir "assets/images/$file_name"
 # create same file for saving program code
 mkdir "../Code_JekyllBlog/$file_name"
 
+# create videos file for saving program videos
+mkdir "../Video_JekyllBlog/$file_name"
