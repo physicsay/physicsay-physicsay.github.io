@@ -20,7 +20,7 @@ $$
 m\frac{d^2x}{dt^2} = -kx - f
 $$
 
-我们假定以下模型：滑块在运动时受到滑动摩擦力，大小与正压力成正比 $f = \mu mg$
+有以下假设：滑块在运动时受到滑动摩擦力，大小与正压力成正比 $f = \mu mg$
 
 <img src='/assets/images/2020-04-16-oscillation-via-vpython-4/fig.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
@@ -30,7 +30,7 @@ $$
 
 ### 2.1 欠阻尼振动
 
-假设滑块与平面的摩擦系数很小，可以猜测：随着每次移动，总会有能量损失，滑块运动的振幅会逐渐减小，直至滑块静止。
+假设滑块与平面的摩擦系数很小，可以猜测：随着每次移动，总会有能量损失，滑块运动的振幅会逐渐减小，直至滑块静止，称为欠阻尼振动。
 
 <img src='/assets/images/2020-04-16-oscillation-via-vpython-4/under.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
 
@@ -42,7 +42,7 @@ $$
 
 ### 2.2 临界阻尼振动
 
-假设滑块与平面的摩擦系数稍微大一些，使得滑块从最远处静止释放后，很快回到平衡位置并停下来，这是一个临界情况。
+假设滑块与平面的摩擦系数稍微大一些，使得滑块从最远处静止释放后，很快回到平衡位置并停下来，称为临界阻尼振动。
 
 <img src='/assets/images/2020-04-16-oscillation-via-vpython-4/critical.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
 
@@ -52,15 +52,14 @@ $$
 
 ### 2.3 过阻尼振动
 
-假设摩擦系数很大，滑块释放后，会经过较长时间回到平衡位置停下来，这种运动称为过阻尼状态。
+假设摩擦系数很大，滑块释放后，会经过较长时间回到平衡位置停下来，称为过阻尼振动。
 
 <img src='/assets/images/2020-04-16-oscillation-via-vpython-4/over_t.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
 
-
 ## 3. 代码
 
-下面是阻尼运动的主要代码。
+下面是阻尼运动的 VPython 代码。
 
 > 通过修改不同的摩擦系数，可得不同的阻尼状态。
 
@@ -68,6 +67,7 @@ $$
 # -*- coding: utf-8 -*-
 # @Author: jiap
 # @Wechat: 物理说 (Physicsay)
+# @Website: www.physicsay.com
 
 from vpython import *
 
