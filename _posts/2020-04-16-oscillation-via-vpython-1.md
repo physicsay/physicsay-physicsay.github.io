@@ -4,7 +4,7 @@ url: oscillation-via-vpython-1
 date: 2020-04-16 15:47:14
 tags:
 - 可视化
-- Vpython
+- VPython
 - 简谐振动
 categories: mechanics 
 description: 用 VPython 来模拟弹簧振子的简谐振动
