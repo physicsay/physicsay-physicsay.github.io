@@ -23,7 +23,7 @@ description: 来研究下弹簧振子动能和势能的变化情况。
 
 <img src='/assets/images/2020-04-16-oscillation-via-vpython-3/epk.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
-可以发现，刚运动时，物体动能为 0， 势能处于最大；当势能为 0（弹簧振子处于平衡位置），动能最大。
+可以发现，动能和势能之和保持不变。滑块刚运动时，物体动能为 0， 势能处于最大；当势能为 0（弹簧振子处于平衡位置），动能最大。
 
 ## 2. 动能、势能的周期？
 
@@ -42,6 +42,7 @@ description: 来研究下弹簧振子动能和势能的变化情况。
 # -*- coding: utf-8 -*-
 # @Author: jiap
 # @Wechat: 物理说 (Physicsay)
+# @Website: www.physicsay.com
 
 from vpython import *
 
