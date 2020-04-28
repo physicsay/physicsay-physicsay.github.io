@@ -4,7 +4,7 @@ url: oscillation-via-vpython-2
 date: 2020-04-16 15:47:14
 tags:
 - 可视化
-- Vpython
+- VPython
 - 简谐振动
 categories: mechanics 
 description: 在弹簧振子的运动中，如何才能改变其运动的振幅和周期？
