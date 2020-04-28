@@ -3,7 +3,6 @@ title: 通电圆环的磁场模拟
 url: magetic-field-of-ring-simulation
 date: 2020-04-14 22:15:48
 tags:
-- 模拟
 - 可视化
 categories: electromagnetism
 description: 让我们更直观地看到通电圆环的磁场变化吧。
