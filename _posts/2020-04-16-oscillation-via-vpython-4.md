@@ -1,13 +1,13 @@
 ---
-title: 用 Vpython 模拟弹簧振子的简谐振动 (四)
+title: 用 VPython 模拟弹簧振子的简谐振动 (四)
 url: oscillation-via-vpython-4
 date: 2020-04-16 15:47:14
 tags:
 - 可视化
-- Vpython
+- VPython
 - 简谐振动
 categories: mechanics 
-description: 若存在摩擦力，弹簧振子的运动又是怎样的呢？
+description: 在弹簧振子模型中，滑块受到平面的摩擦力，那运动又是怎样的呢？
 ---
 
 ## 1. 阻尼振动
