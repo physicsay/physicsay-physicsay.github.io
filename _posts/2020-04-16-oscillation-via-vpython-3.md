@@ -1,10 +1,10 @@
 ---
-title: 用 Vpython 模拟弹簧振子的简谐振动 (三)
+title: 用 VPython 模拟弹簧振子的简谐振动 (三)
 url: oscillation-via-vpython-3
 date: 2020-04-16 15:47:14
 tags:
 - 可视化
-- Vpython
+- VPython
 - 简谐振动
 categories: mechanics 
 description: 来研究下弹簧振子动能和势能的变化情况。
