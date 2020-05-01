@@ -1,9 +1,9 @@
 ---
-title: 用 Vpython 模拟单摆运动 (三)
+title: 用 VPython 模拟单摆运动 (三)
 url: pendulum-simulation-3
 date: 2020-04-18 16:31:26
 tags:
-- Vpython
+- VPython
 - 可视化
 categories: mechanics
 description: 来考察下单摆运动动能和势能的转换。
@@ -21,7 +21,7 @@ description: 来考察下单摆运动动能和势能的转换。
 
 ## 2. 代码
 
-下面给出了相应 Vpython 代码：
+下面给出了相应 VPython 代码：
 
 ```python
 from vpython import *

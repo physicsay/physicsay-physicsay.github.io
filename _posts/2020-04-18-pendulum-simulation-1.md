@@ -3,7 +3,7 @@ title: 用 Vpython 模拟单摆运动 (一)
 url: pendulum-simulation-1
 date: 2020-04-18 15:51:27
 tags:
-- Vpython
+- VPython
 - 可视化
 categories: mechanics
 description: 用 Vpython 模拟单摆的运动，让运动研究不再困难。

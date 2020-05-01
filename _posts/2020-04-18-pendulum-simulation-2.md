@@ -1,9 +1,9 @@
 ---
-title:  用 Vpython 模拟单摆运动 (二)
+title:  用 VPython 模拟单摆运动 (二)
 url: pendulum-simulation-2
 date: 2020-04-18 16:31:22
 tags:
-- Vpython
+- VPython
 - 可视化
 categories: mechanics
 description: 探究影响单摆周期的因素

@@ -1,9 +1,9 @@
 ---
-title: 用 Vpython 模拟单摆运动 (四)
+title: 用 VPython 模拟单摆运动 (四)
 url: pendulum-simulation-4
 date: 2020-04-18 16:31:28
 tags:
-- Vpython
+- VPython
 - 可视化
 categories: mechanics
 description: 来研究下大角度下的单摆周期。
