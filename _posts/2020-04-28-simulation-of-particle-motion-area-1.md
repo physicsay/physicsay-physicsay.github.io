@@ -1,6 +1,6 @@
 ---
 title: 用 VPython 模拟带电粒子在磁场中运动区域 (一)
-url: simulation-of-particle-motion-area
+url: simulation-of-particle-motion-area-1
 date: 2020-04-28 09:40:12
 tags:
 - VPython
