@@ -9,7 +9,7 @@ categories: mechanics
 description: 探究影响单摆周期的因素
 ---
 
-上文用 Vpython 制作了单摆的运动，本文用 Vpython 来研究影响单摆周期的因素。
+上文用 VPython 制作了单摆的运动，本文用 VPython 来研究影响单摆周期的因素。
 
 ## 1. 单摆周期
 
@@ -74,14 +74,11 @@ l1 = 10; l2 = 5
 
 ball1 = sphere(pos = vector(l1* sin(theta1 / 180 * pi), (H - l1 * cos(theta1 / 180 * pi)), 0), radius = 0.5, color = color.green, make_trail=True, retain = 200)
 ball2 = sphere(pos = vector(l2* sin(theta2 / 180 * pi), (H - l2 * cos(theta2 / 180 * pi)), 0), radius = 0.5, color = color.black, make_trail=True, retain = 200)
-
 pivot = vector(0, H, 0)
 roof = box(pos = pivot, size = vector(10, 0.5, 10))
 rod1 = cylinder(pos = pivot, axis = ball1.pos - pivot, radius = 0.1, color= color.red)
 rod2 = cylinder(pos = pivot, axis = ball2.pos - pivot, radius = 0.1, color= color.black)
-
 back = box(pos=vector(0,H/2,-0.5), size = vector(10,11, 0.5)) 
-
 t = 0
 dt = 0.1
 
