@@ -1,15 +1,16 @@
 ---
-title: 用 VPython 模拟带电粒子在磁场中运动区域 (二)
+title: 模拟带电粒子在磁场中运动区域 (二) —— 以 2017 年江苏高考压轴题为例
 url: simulation-of-particle-motion-area-2
 date: 2020-04-28 19:30:36
 tags:
 - VPython
 - 可视化
 - 物理题
+- 磁场
 description: 用 Vpython 模拟粒子在磁场中可能的运动区域 ——  以 2017 年江苏高考压轴题为例
 ---
 
-## 1. 真题
+## 0. 真题
 
 **质谱仪的工作原理如图所示。大量的甲、乙两种离子飘入电压为 $U_0$ 的加速电场，其初速度几乎为 0，经过加速后，通过宽为 $L$ 的狭缝 $MN$ 沿着与磁场垂直的方向进入磁感应强度为 $B$ 的匀强磁场中，最后打到照相底片上。已知甲、乙两种离子的电荷量均为 $+q$，质量分别为 $2m$ 和 $m$，图中虚线为经过狭缝左、右边界 M、N 的甲种离子的运动轨迹。不考虑离子间的相互作用。**
 
@@ -21,11 +22,11 @@ description: 用 Vpython 模拟粒子在磁场中可能的运动区域 ——  �
 
 <img src='/assets/images/2020-04-28-simulation-of-particle-motion-area-2/fig.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
-## 2. 解析
+## 1. 解析
 
 本文使用 VPython 进行模拟粒子的运动过程。
 
-### 2.1 第一问
+### 1.1 第一问
 
 甲粒子在磁场中的运动半径为 $r_1$，在电场加速过程中有：
 
@@ -51,7 +52,7 @@ $$
 x = \frac{4}{B}\sqrt{\frac{mU_0}{q}} - L
 $$
 
-### 2.2 第二问
+### 1.2 第二问
 
 最窄处位于过两虚线焦点的垂线上(即两圆弧顶点连线的中垂线)
 
@@ -69,7 +70,7 @@ $$
 d = \frac{2}{B}\sqrt{\frac{mU_0}{q}} - \sqrt{\frac{4mU_0}{qB^2}- \frac{L^2}{4}}
 $$
 
-### 2.3 第三问
+### 1.3 第三问
 
 乙粒子在磁场中的运动半径为 $r_2$，甲粒子从 M 点入射的最小运动半径轨迹和 乙粒子从N 点入射的最大轨迹不重合即可，有：
 
@@ -95,16 +96,16 @@ $$
 L < \frac{2}{B}\sqrt{\frac{m}{q}}(2\sqrt{U_0 - \Delta U} - \sqrt{2(U_0 + \Delta U)})
 $$
 
-## 3. 模拟
+## 2. 模拟
 
 需要对模型一些参数进行设定：设甲粒子的荷质比为 $5 × 10^7 C/kg$， 乙粒子的荷质比为 $10^8 C/kg$，加速电压为 $10^5 V$，狭缝 MN 的宽为 $2cm$。
 
 
-### 3.1 模拟同一粒子轨迹区域
+### 2.1 模拟同一粒子轨迹区域
 以甲粒子为例，绘制从狭缝不同位置垂直射出后，粒子的运动轨迹，如下图所示：
 <img src='/assets/images/2020-04-28-simulation-of-particle-motion-area-2/single.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
 
-### 3.2 模拟不同粒子的运动轨迹  
+### 2.2 模拟不同粒子的运动轨迹  
 
 加上乙粒子的运动轨迹，如下图所示 (绿色轨迹为乙粒子)。
 <img src='/assets/images/2020-04-28-simulation-of-particle-motion-area-2/diff_p.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
@@ -112,7 +113,7 @@ $$
 
 <img src='/assets/images/2020-04-28-simulation-of-particle-motion-area-2/diff_p.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
-### 3.3 模拟不同电压下粒子的轨迹
+### 2.3 模拟不同电压下粒子的轨迹
 以甲粒子为例，电压从 $0.9 × 10^5 V$ 至 $1.1 × 10^5 V$ 变化，考察粒子的运动轨迹。
 <img src='/assets/images/2020-04-28-simulation-of-particle-motion-area-2/diff_u.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
 (此处有动图，加载较慢，请耐心等待)

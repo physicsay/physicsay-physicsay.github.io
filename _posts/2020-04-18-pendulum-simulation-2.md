@@ -1,5 +1,5 @@
 ---
-title:  用 VPython 模拟单摆运动 (二)
+title:  单摆运动模拟 (二)
 url: pendulum-simulation-2
 date: 2020-04-18 16:31:22
 tags:
@@ -99,5 +99,6 @@ while (t < 1000):
 	t = t + dt
 ```
 
-## 思考：
+**思考**
+
 1. 单摆运动中动能和势能是如何转换的呢？

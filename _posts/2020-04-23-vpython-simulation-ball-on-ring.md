@@ -1,14 +1,17 @@
 ---
-title: 用 VPython 模拟球在圆环上的运动
+title: 无锡市 2019 届高三一模 —— 带电小球在圆环上的运动模拟
 url: vpython-simulation-ball-on-ring
 date: 2020-04-23 10:24:08
 tags:
 - VPython
 - 可视化
 - 物理题
+- 复合场
 categories: comprehension 
 description: 带电小球在重力、支持力和电场力的作用下，在圆环上速率是如何变化的呢？
 ---
+
+## 0. 题目
 
 来看一下无锡市 2019 届高三第一学期期末考试的题：
 

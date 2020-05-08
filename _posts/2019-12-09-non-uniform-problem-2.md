@@ -1,5 +1,5 @@
 ---
-title: 变速问题一种讨巧解法 —— 运动(1-2)
+title: 变速问题一种讨巧解法 —— 以 2012 江苏物理高考为例 (2)
 url: non-uniform-problem-2
 date: 2020-04-03 10:50:22
 tags:
@@ -14,7 +14,7 @@ description: 用微积分试试高中的变速问题？
 
 <img src='/assets/images/2019-12-09-non-uniform-problem-2/fig.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
-## 解法三
+## 3. 解法三
 
 对物体应用牛顿第二定律，可以写出方程，并对方程进行求解：
 

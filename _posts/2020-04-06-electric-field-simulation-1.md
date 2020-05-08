@@ -80,11 +80,13 @@ description: 很难把握住电场和电势的概念？把电场和电势画出�
 <img src='/assets/images/2020-04-06-electric-field-simulation-1/ele-1.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
 ---
-## 思考
+
+**思考**
 
 1. 结合上图给的电势和电场，对比想想 “沿着电场线方向电势降低”。
 
 ---
+
 有了可视化的示意图，是不是可以对电场和电势分布更直观些？
 
 那如果是三个电荷的分布呢？敬请期待下文。

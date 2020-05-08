@@ -1,12 +1,12 @@
 ---
-title: 用 Vpython 模拟单摆运动 (一)
+title: 单摆运动模拟 (一)
 url: pendulum-simulation-1
 date: 2020-04-18 15:51:27
 tags:
 - VPython
 - 可视化
 categories: mechanics
-description: 用 Vpython 模拟单摆的运动，让运动研究不再困难。
+description: 用 VPython 模拟单摆的运动，让运动研究不再困难。
 ---
 
 ## 1. 单摆运动
@@ -74,6 +74,8 @@ while (t < 100):
 	t = t + dt
 ```
 
-## 思考：
-1. 既然知道了单摆的运动，那么影响单摆周期的因素有哪些呢？
+**思考**
+
+1. 既然知道了单摆的运动，那么影响单摆周期的因素有哪些呢？  
+
 2. 单摆运动中动能和势能是如何转换的呢？ 

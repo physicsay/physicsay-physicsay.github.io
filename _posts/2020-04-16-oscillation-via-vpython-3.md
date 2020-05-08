@@ -1,5 +1,5 @@
 ---
-title: 用 VPython 模拟弹簧振子的简谐振动 (三)
+title: 弹簧振子的简谐振动模拟 (三)
 url: oscillation-via-vpython-3
 date: 2020-04-16 15:47:14
 tags:
@@ -83,5 +83,6 @@ while (t < 50):
 	t = t + dt
 ```
 
-## 思考：
+**思考**
+
 1. 如果平面有摩擦，滑块的运动是怎样的？

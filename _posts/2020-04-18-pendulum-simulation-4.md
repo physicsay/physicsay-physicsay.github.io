@@ -1,5 +1,5 @@
 ---
-title: 用 VPython 模拟单摆运动 (四)
+title: 单摆运动模拟 (四)
 url: pendulum-simulation-4
 date: 2020-04-18 16:31:28
 tags:
