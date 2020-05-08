@@ -6,7 +6,7 @@ tags:
 - VPython
 - 可视化
 - 物理题
-description: 用 Vpython 模拟粒子在磁场中可能的运动区域
+description: 用 Vpython 模拟粒子在磁场中可能的运动区域 ——  以 2004 年江苏高考压轴题为例
 ---
 
 ## 1. 真题
