@@ -7,6 +7,7 @@ tags:
 - 可视化
 - 物理题
 - 磁场
+categories: electromagnetism 
 description: 用 VPython 模拟粒子在磁场中可能的运动区域 ——  以 2004 年广东高考压轴题为例
 ---
 
