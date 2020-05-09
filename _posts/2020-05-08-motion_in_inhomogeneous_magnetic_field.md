@@ -1,5 +1,5 @@
 ---
-title:  粒子在不均匀磁场中运动 —— 以 2020 海淀高三选择题为例
+title:  粒子在不均匀磁场中运动 (一) —— 以 2020 海淀高三选择题为例
 url: motion_in_inhomogeneous_magnetic_field
 date: 2020-05-08 16:24:42
 tags:
