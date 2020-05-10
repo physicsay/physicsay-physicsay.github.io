@@ -1,5 +1,5 @@
 ---
-title: 无锡市 2019 届高三一模 —— 带电小球在圆环上的运动模拟
+title: 带电小球在圆环上的运动模拟 —— 以无锡市 2019 届高三一模选择题为例
 url: vpython-simulation-ball-on-ring
 date: 2020-04-23 10:24:08
 tags:
