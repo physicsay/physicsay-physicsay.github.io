@@ -15,10 +15,10 @@ description:  知道等时圆吗？本文介绍了什么是等时圆，还有些
 
 <img src='/assets/images/2020-05-11-isochronous-circle-1/fig.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
-A. $t_D > t_C > t_E > t_B$
-B. $t_B > t_E > t_C > t_D$
-C. $t_B = t_E = t_C = t_D$
-D. $t_B < t_E < t_C = t_D$
+A. $t_D > t_C > t_E > t_B$  
+B. $t_B > t_E > t_C > t_D$  
+C. $t_B = t_E = t_C = t_D$  
+D. $t_B < t_E < t_C = t_D$  
 
 ## 2. VPython 模拟
 
