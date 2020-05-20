@@ -79,6 +79,8 @@ $$
 
 <img src='/assets/images/2020-05-20-collision-in-magnetic-field-1/situation2.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
 
+因此，带电粒子在圆筒中运动的时间为 $\frac{3\pi m}{qB}$ 或 $\frac{\pi m}{qB}$。
+
 ### 1.3 第三问
 
 粒子从 M 点射入磁场的速度为 $v$，半径为 $r$，则有 $qvB = m\frac{v^2}{R}$。设粒子与磁场边界碰撞次数为 $n$，来考察粒子的运动，判断能否从 M 点原路出射。
