@@ -5,6 +5,7 @@ date: 2020-05-18 13:51:14
 tags:
 - 可视化
 - 磁场
+- 物理题
 categories:  electromagnetism
 description: 以 2019 届无锡高三一模压轴题为例，考查粒子在圆环磁场中的运动。
 ---
