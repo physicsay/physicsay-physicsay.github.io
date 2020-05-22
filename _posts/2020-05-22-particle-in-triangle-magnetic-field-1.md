@@ -21,7 +21,7 @@ description: 来考察下带电粒子在三角磁场中的运动吧
 **C. 随着 $\theta$ 角的增大，粒子在磁场中运动的时间先变大后变小**    
 **D. 在 AC 边界上只有一半区域有粒子射出**    
 
-<img src='/assets/images/2020-05-22-particle-in-triangle-magnetic-field/fig.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+<img src='/assets/images/2020-05-22-particle-in-triangle-magnetic-field-1/fig.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
 ## 1. 解析
 
@@ -29,7 +29,7 @@ description: 来考察下带电粒子在三角磁场中的运动吧
 
 由于 $\theta$ 是从 0 到 90° 变化，先考察 $\theta = 0°$ 到情况。
 
-<img src='/assets/images/2020-05-22-particle-in-triangle-magnetic-field/sitution1.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+<img src='/assets/images/2020-05-22-particle-in-triangle-magnetic-field-1/sitution1.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
 此时带电粒子最多只能入射到 AC 的一半位置，D 对。
 
@@ -37,13 +37,13 @@ description: 来考察下带电粒子在三角磁场中的运动吧
 
 由于粒子运动半径为 R ，因此可以绘制特征等边三角形 AOO'。
 
-<img src='/assets/images/2020-05-22-particle-in-triangle-magnetic-field/sitution2.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+<img src='/assets/images/2020-05-22-particle-in-triangle-magnetic-field-1/sitution2.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
 可以发现当 $\theta$ 为 60° 时，粒子从 A 点出射，当 $\theta < 60°$ 时，粒子从 AC 边射出， A 对。
 
-关于带电粒子中在磁场中的运动时间，可以通过粒子在磁场中运动的轨迹长度判断，即弧长。
+关于带电粒子中在磁场中的运动时间，可以通过粒子在磁场中运动的轨迹长度判断，即弧长。绘制多个轨迹，会发现在 0° 和 60° 入射的粒子的弧长是一样的，从 0° 到 60° 之间，时间先减小后增大。随着角度增加，当带电粒子打在 AC 边上，弧长减小，时间也减小。整个运动时间为：先减小后增大再减小。
 
-随着 $\theta$ 角的增大，粒子在磁场中运动的时间逐渐变小，BC 错误。
+随着 $\theta$ 角的增大，粒子在磁场中运动的时间逐渐变小，B、C 错误。
 
 答案选 AD。
 
@@ -51,6 +51,10 @@ description: 来考察下带电粒子在三角磁场中的运动吧
 
 用 VPython 来模拟下粒子在磁场中的运动，如下所示：
 
-<img src='/assets/images/2020-05-22-particle-in-triangle-magnetic-field/motion.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
+<img src='/assets/images/2020-05-22-particle-in-triangle-magnetic-field-1/motion.gif' style='zoom:40%; margin: 0 auto; display: block;'/>
 
+再来看下粒子在磁场中的运动时间曲线：
 
+<img src='/assets/images/2020-05-22-particle-in-triangle-magnetic-field-1/time.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+
+> 注： 由于本题未给出速度、磁场等条件，因此上图中的时间仅作参考。
