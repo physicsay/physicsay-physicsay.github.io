@@ -29,7 +29,7 @@ description: 来考察下带电粒子在三角磁场中的运动吧
 
 由于 $\theta$ 是从 0 到 90° 变化，先考察 $\theta = 0°$ 到情况。
 
-<img src='/assets/images/2020-05-22-particle-in-triangle-magnetic-field-1/sitution1.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+<img src='/assets/images/2020-05-22-particle-in-triangle-magnetic-field-1/solution1.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
 此时带电粒子最多只能入射到 AC 的一半位置，D 对。
 
@@ -37,7 +37,7 @@ description: 来考察下带电粒子在三角磁场中的运动吧
 
 由于粒子运动半径为 R ，因此可以绘制特征等边三角形 AOO'。
 
-<img src='/assets/images/2020-05-22-particle-in-triangle-magnetic-field-1/sitution2.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+<img src='/assets/images/2020-05-22-particle-in-triangle-magnetic-field-1/solution2.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
 可以发现当 $\theta$ 为 60° 时，粒子从 A 点出射，当 $\theta < 60°$ 时，粒子从 AC 边射出， A 对。
 
