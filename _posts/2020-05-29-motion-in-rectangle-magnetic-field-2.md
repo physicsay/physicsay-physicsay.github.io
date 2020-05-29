@@ -112,12 +112,12 @@ $$
 v_n = \frac{qB}{m}(\frac{L}{n+1} - \sqrt{3}d)
 $$
 
-满足 $n \geqslant 1$ 且满足 $\frac{L}{n+1} - \sqrt{3}d \geq 0$
+满足 $n \geqslant 1$ 且满足 $\frac{L}{n+1} - \sqrt{3}d \gt 0$
 
 可得 
 
 $$
-1 \leqslant n \leq \frac{\sqrt{3}L}{3d} - 1
+1 \leqslant n \lt \frac{\sqrt{3}L}{3d} - 1
 $$
 
 ---
