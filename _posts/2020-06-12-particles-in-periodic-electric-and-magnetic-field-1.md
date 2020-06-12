@@ -1,5 +1,5 @@
 ---
-title: 带电粒子在周期性电磁场中运动的 VPython 模拟 (一)
+title: 带电粒子在交变电磁场中运动 (一)
 url: particles-in-periodic-electric-and-magnetic-field
 date: 2020-06-12 09:55:56
 tags:
