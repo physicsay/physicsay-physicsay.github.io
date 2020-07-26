@@ -1,5 +1,5 @@
 ---
-title: 带电粒子在交变电磁场中运动 (二) —— 以 2010 年江苏高考物理压轴题为例 
+title: 带电粒子在交变电磁场中运动 (二) —— 以 2010 年江苏高考物理压轴题一二问为例 
 url: 2020-06-13-particles-in-periodic-electric-and-magnetic-field-2
 date: 2020-06-13 15:18:51
 tags:
@@ -120,10 +120,48 @@ $n = 0, 1, 2, ...$
 
 ## 2. 模拟
 
-使用 VPython 进行模拟粒子运动的过程，
+用 VPython 对问题二进行模拟，给出电子运动的实际轨迹、速度时间图像 $v-t$ 和 位移时间图像 $y-t$。
+
+取电子的荷质比为 $1.75 × 10^11 C/kg$，$\tau = 1 × 10^{-6} s$，为方便模拟，取 $d = 1m$。
+
+### 2.1 当 $k = 1$ 情况
+
+令 $k = 1$，即正向电压和反向电压相等，，取电压为 $U = 1 V$，绘制 $0 - 2 \tau$ 粒子的 速度时间图像 $v-t$ 和 位移时间图像$y-t$，如下图所示。
+
+<img src='/assets/images/2020-06-13-particles-in-periodic-electric-and-magnetic-field-2/vt_i.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+
+> 由于位移时间图像 $y-t$ 的图像是抛物线，在 $0 - 2 \tau$ 内是由两段抛物线构成。
+
+绘制 30 个周期内的图像，如下图所示。
+
+<img src='/assets/images/2020-06-13-particles-in-periodic-electric-and-magnetic-field-2/xt_30.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
 
+### 2.2 当 $k < 1 $ 情况
 
+当 $k < 1 $时，即正向电压大于反向电压，取电压为 $U = 0.95 V$，下面给出 10 个周期的速度时间图像 $v-t$。
+
+<img src='/assets/images/2020-06-13-particles-in-periodic-electric-and-magnetic-field-2/vt_less.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+
+> 每经过一个周期后，电子的末速度都要比前一个周期末速度大。
+
+将 $k = 1$ 与 $k < 1 (k = 0.95)$ 的位移时间图像 $y-t$ 的图像进行比较。
+
+<img src='/assets/images/2020-06-13-particles-in-periodic-electric-and-magnetic-field-2/compare.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+
+> 30 个周期后， $k < 1 (k = 0.95)$ 的电子竖直位移比 $k = 1 $ 的电子竖直方向的位移大（$k < 1$ 情况下，每个周期电子的平均速度都会增大，位移也会增加）。
+
+### 2.3 当 $k > 1 $ 情况
+
+当 $k > 1 $时，即正向电压小于反向电压，取电压为 $U = 1.05 V$，下面给出 30 个周期的速度时间图像 $v-t$。
+
+<img src='/assets/images/2020-06-13-particles-in-periodic-electric-and-magnetic-field-2/vt_great.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+
+> 每经过一个周期后，电子的末速度都要比前一个周期末速度小。
+
+<img src='/assets/images/2020-06-13-particles-in-periodic-electric-and-magnetic-field-2/xt_great.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+
+> 值得注意的是，当 $k > 1 $ 的位移图像中，电子在某个周期内的位移为 0 (图中红色部分)，这是本题的第三问，本文暂不讨论。
 
 
 
