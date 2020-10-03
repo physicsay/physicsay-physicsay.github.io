@@ -42,26 +42,26 @@ from vpython import *
 canvas(width= 1000, height = 1000, center = vector(0,0,0), background = color.white)
 
 DogVelocity = 8
-RabbitVelocity = 6
+FoxVelocity = 6
 
 ring(pos=vector(0,0,0), axis = vector(0,0,1), radius = 1, thickness=0.01, color = color.black)
 
 dog = sphere(pos = vector(0, 0, 0), radius = 0.05, color = color.red, make_trail = True)
-rabbit = sphere(pos = vector(1, 0, 0), radius = 0.05, color = color.green, make_trail = True)
+fox = sphere(pos = vector(1, 0, 0), radius = 0.05, color = color.green, make_trail = True)
 
 dt = 0.00005
 theta = 0
 
 while True:
 	rate(400)
-	d_theta = RabbitVelocity * dt 
+	d_theta = FoxVelocity * dt 
 	theta += d_theta
 
-	rabbit.pos = vector(cos(theta), sin(theta), 0)
+	fox.pos = vector(cos(theta), sin(theta), 0)
 	
-	dog_direct = (rabbit.pos - dog.pos)/mag(rabbit.pos - dog.pos)
+	dog_direct = (fox.pos - dog.pos)/mag(fox.pos - dog.pos)
 	dog.pos += dog_direct * DogVelocity * dt
-	if mag(dog.pos - rabbit.pos) < 0.001:
+	if mag(dog.pos - fox.pos) < 0.001:
 		break
 ```
 
@@ -69,8 +69,7 @@ while True:
 
 需要讲解的部分：
 
-> 1. 这里 $x$，$y$ 轴的长度是根据猎犬和狐狸速度来设置的；  
-> 2. 如果猎犬的速度小于狐狸速度(永远追不上)，则该程序会一直运行。  
+> 1. 如果猎犬的速度小于狐狸速度(永远追不上)，则该程序会一直运行。  
 
 ## 3. 思考  
 1. 如果猎犬追狐狸有预判，情况又该如何？如何修改代码？
