@@ -4,7 +4,7 @@ url: mechanics-collision-problem-2
 date: 2020-10-06 15:33:07
 tags:
 - 可视化
-- VPython
+- 物理题
 categories: mechanics
 description: 以 2020 年济南市高三第一次模考题为例，研究力学中的碰撞问题。
 ---
