@@ -18,7 +18,7 @@ description: 以 2019 年全国 III 卷压轴计算题 与 2019 年福州高三�
 
 <img src='/assets/images/2020-10-04-mechanics-collision-problem-1/fig2.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
-(1) 求A、B 碰后瞬间速度 $v_A$、$v_B$ 的大小；  
+(1) 求 A、B 碰后瞬间速度 $v_A$、$v_B$ 的大小；  
 (2) A、B 碰后哪一个速度先减为零？求此时 A 与 B 之间的距离 $\Delta s_1$ 。  
 (3) A 和 B 都停止运动后，A 与 B 之间的距离 $\Delta s_2$ 。  
 
