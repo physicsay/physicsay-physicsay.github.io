@@ -169,6 +169,6 @@ print("Profit = ", MaxProfit)
 
 ---
 Reference:  
-[1] https://en.wikipedia.org/wiki/Linear_programming
-[2] https://www.geeksforgeeks.org/matplotlib-pyplot-contourf-in-python/
+[1] https://en.wikipedia.org/wiki/Linear_programming  
+[2] https://www.geeksforgeeks.org/matplotlib-pyplot-contourf-in-python/  
 [3] https://zhuanlan.zhihu.com/p/270319722
