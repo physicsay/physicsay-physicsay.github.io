@@ -79,7 +79,7 @@ $$
 模型假定 $k = 1$，$Q = 1.1$，$q = 1$, $m = 1$，初始速度 $v_0 = 2 m/s$，$a$、$b$ 距离为 $2 m$。绘制了 $a$、$b$ 球的位置 $x$ 随着时间 $t$ 变化关系、速率 $v_a$，$v_b$ 随时间 $t$ 变化关系、库仑力大小 $F$ 随时间 $t$ 变化关系，以及 $b$ 球动能 $E_{kb}$ 随 $x_b$ 距离变化关系，如下图所示。
 
 
-<img src='/assets/images/2021-01-15-mathematical-modeling-differential-equation-1/four.png' style='zoom:40%; margin: 0 auto; display: block;'/>
+<img src='/assets/images/2021-01-15-mathematical-modeling-differential-equation-1/Four.png' style='zoom:40%; margin: 0 auto; display: block;'/>
 
 (1) 图中，$a$ 球在不断靠近 $b$ 球，$b$ 球刚开始的位置变化较小，当 $a$ 球很靠近 $b$ 球时，$b$ 球的加速度变大，速度增加。  
 
