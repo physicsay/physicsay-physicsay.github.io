@@ -1,5 +1,5 @@
 ---
-title:  建模教程 - 笨方法求解线性规划 (一)
+title: 建模教程 - 笨方法求解线性规划 (一)
 url: mathematical-modeling-linear-programming-by-python-1
 date: 2021-01-10 08:44:42
 tags: 
