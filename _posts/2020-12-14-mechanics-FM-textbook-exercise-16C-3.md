@@ -1,5 +1,5 @@
 ---
-title:  两种方法求解 Mechanics 16C 的弹簧问题
+title: 两种方法求解 Mechanics 16C 的弹簧问题
 url: mechanics-FM-textbook-exercise-16C-3
 date: 2020-12-14 18:12:20
 tags:
